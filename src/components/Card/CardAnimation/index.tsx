@@ -7,7 +7,6 @@ import {
 } from 'react-native-reanimated';
 
 import { AnimationContainer } from './styles';
-
 interface CardAnimationProps extends ViewProps {
   children: React.ReactNode;
 }
@@ -39,10 +38,6 @@ export function CardAnimation({ children, ...rest }: CardAnimationProps) {
   };
 
   useEffect(() => {
-    /**
-     * TODO - setup cardOpacity.value and cardOffset.value with
-     * withTiming()
-     */
      startAnimation();
   }, []);
 
